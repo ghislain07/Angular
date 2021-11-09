@@ -1,0 +1,49 @@
+<div class="clr-row">
+  <div class="clr-col-12">
+    <div class="card">
+      <div class="card-header">
+        Listes des Etudiants
+      </div>
+      <div class="card-block">
+        <!-- <div class="card-title">
+          Block
+        </div> -->
+        <ng-container *ngIf="etudiants$ | async as etudiants">
+          <ul class="etudiant-container">
+            <ng-container *ngFor="let etudiant of etudiants; let last = last">
+              <div class="separator" *ngIf="!last"></div>
+            </ng-container>
+          </ul>
+        </ng-container>
+        <!-- <pre>{{ etudiants$ }}</pre> -->
+
+        <!-- <form [formGroup]="model" clrForm novalidate>
+          <clr-input-container>
+            <input clrInput type="text" placeholder="Nom..." formControlName="nomEtudiant">
+            <clr-control-error *clrIfError="'required'">
+              Le champ est requis
+            </clr-control-error>
+          </clr-input-container>
+          <clr-input-container>
+            <input clrInput type="text" placeholder="Prenom..." formControlName="prenomEtudiant">
+            <clr-control-error *clrIfError="'required'">
+              Le champ est requis
+            </clr-control-error>
+          </clr-input-container>
+        </form> -->
+        <!-- <div class="card-text">
+          ...
+        </div> -->
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-primary" [disabled] ="!model.valid" (click)="onAjouter()">
+          Ajouter
+        </button>
+        <!-- <button class="btn btn-primary" (click)="onFetch()">
+          Charger
+        </button> -->
+        <!-- <p>Form Status: {{ model.status }}</p> -->
+      </div>
+    </div>
+  </div>
+</div>
