@@ -1,0 +1,45 @@
+<!-- <div class="container">
+  <div class="row">
+    <router-outlet></router-outlet>
+
+    <div class="col-xs-12">
+      <h2>Mes appareils</h2>
+
+      <p> Mis à jour : {{ lastUpdate | date: 'MMMM d EEEE y' | uppercase }}</p>
+
+      <ul class="list-group">
+        <app-appareil *ngFor="let appareil of appareils" [appareilName]="appareil.name"
+          [appareilStatus]="appareil.status">
+        </app-appareil>
+      </ul> -->
+<!-- [] pour lier à une propriéte-->
+<!-- () pour lier à un évènement du dom et on y met la méthode-->
+<!-- [()] la liaison à double sens entre le ts en le template -->
+<!-- <button class="btn btn-success" [disabled]="!isAuth" (click)="onAllumer()">Tout allumé
+
+      </button>
+    </div>
+  </div>
+</div> -->
+
+<!-- <app-card>
+  <app-card-title [title]="'Card title'"></app-card-title>
+  <app-card-content [content]="'Card content'"></app-card-content>
+  <app-card-footer [footer]="'Card footer'"></app-card-footer>
+</app-card> -->
+
+
+<!-- <ng-container *ngIf="talkObservable2$ | async as talk">
+  <p> {{ talk }} </p>
+</ng-container> -->
+<!-- <ng-container *ngFor="let i of b$"> -->
+<!-- <ng-container *ngIf="multiplication$ | async as multipl">
+  <p> 2 * {{ i }} = {{ multipl }} </p>
+</ng-container> -->
+<!-- </ng-container> -->
+
+<!-- <app-etudiant></app-etudiant> -->
+<app-header></app-header>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

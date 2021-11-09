@@ -1,0 +1,11 @@
+<div class="card" [ngStyle]="imageStyle">
+  <div class="card-title">
+    <ng-content select="[title]"></ng-content>
+  </div>
+  <div class="card-body">
+    <ng-content select="[content]"></ng-content>
+  </div>
+  <div class="card-footer">
+    <ng-content select="[footer]"></ng-content>
+  </div>
+</div>
