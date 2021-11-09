@@ -8,11 +8,12 @@ import { AuthComponent } from './auth/auth/auth.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { HeaderComponent } from './headers/header/header.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
     AppComponent,
-    EtudiantComponent,
+    // EtudiantComponent,
     AuthComponent,
     SigninComponent,
     SignupComponent,
@@ -20,7 +21,8 @@ import { HeaderComponent } from './headers/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
