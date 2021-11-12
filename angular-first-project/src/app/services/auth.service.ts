@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { from } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,15 +9,18 @@ export class AuthService {
   isAuth = false //l'utilisateur est déconnecté en premier lieu
 
   singIn() {
-    return new Promise(
-      (resolve, reject) => {
-        setTimeout(
-          () => {
-            this.isAuth = true;
-            resolve(true);
-          },2000
-        );
-      }
+    return from(
+      new Promise<boolean | undefined>(
+        (resolve, reject) => {
+          const timeout = setTimeout(
+            () => {
+              this.isAuth = true;
+              resolve(true);
+              clearTimeout(timeout);
+            }, 2000
+          );
+        }
+      )
     );
   }
 
