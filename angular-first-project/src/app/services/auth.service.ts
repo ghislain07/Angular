@@ -10,7 +10,7 @@ export class AuthService {
 
   singIn() {
     return from(
-      new Promise<boolean | undefined>(
+      new Promise<boolean>(
         (resolve, reject) => {
           const timeout = setTimeout(
             () => {

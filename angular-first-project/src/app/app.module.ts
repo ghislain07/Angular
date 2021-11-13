@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { ReactiveFormsModule } from '@angular/forms';
 import { EtudiantService } from './services/etudiant.service';
 import { RouterModule, Routes } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ClarityModule } from '@clr/angular';
 
 const appRoutes: Routes = [
   { path: 'auth', component: AuthComponent },
@@ -25,7 +27,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    // EtudiantComponent,
+    EtudiantComponent,
     AuthComponent,
     SigninComponent,
     SignupComponent,
@@ -36,10 +38,12 @@ const appRoutes: Routes = [
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    // ClarityModule,
+    BrowserAnimationsModule,
+    ClarityModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [EtudiantService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  // schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

@@ -7,7 +7,7 @@ import { interval, map, takeWhile } from 'rxjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'first-project-angular';
+  title = 'angular-first-project';
 
   constructor() {
     const firebaseConfig = {

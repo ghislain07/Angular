@@ -36,15 +36,15 @@ export class EtudiantService {
       .post(
         'https://http-client-demo-220eb-default-rtdb.firebaseio.com/prof.json',
         this.etudiants$
-      )
-      .subscribe(
-        () => {
-          console.log('Enrégistrement terminé');
-        },
-        (error: string) => {
-          console.log('Erreur de sauvegarde' + error);
-        }
-      );
+      ) .subscribe({complete: console.log, error: console.info});
+      // .subscribe(
+      //   () => {
+      //     console.log('Enrégistrement terminé');
+      //   },
+      //   (error: string) => {
+      //     console.log('Erreur de sauvegarde' + error);
+      //   }
+      // );
   }
   //  getEtudiantsFromServer() {
   //   this.httpClient

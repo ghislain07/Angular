@@ -2,7 +2,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
-import { firstValueFrom } from 'rxjs';
+import { firstValueFrom, lastValueFrom } from 'rxjs';
 
 
 @Component({
@@ -14,7 +14,7 @@ export class AuthComponent implements OnInit {
 
   authStatus!: boolean;
 
-  constructor(@Inject(AuthService) private authService: AuthService, private router: Router) {}
+  constructor(private authService: AuthService, private router: Router) {}
 
   ngOnInit(): void {
     // this.authStatus = this.authService.isAuth;
@@ -29,7 +29,12 @@ export class AuthComponent implements OnInit {
   // }
 
   async onSingIn() {
-    await this.authService.singIn().toPromise();
+    console.log('testing')
+    // this.authStatus = this.authService.isAuth;
+    await lastValueFrom(this.authService.singIn());
+    this.router.navigate(['auth/signin'])
+
+
   }
 
   onSingOut() {
