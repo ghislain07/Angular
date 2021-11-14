@@ -10,15 +10,15 @@ export class AppComponent {
   title = 'angular-first-project';
 
   constructor() {
-    const firebaseConfig = {
-      apiKey: "AIzaSyDyQ2sVGbZvzFJOSMDZLEdpv6KcvdCVlCw",
-      authDomain: "first-project-f1a1a.firebaseapp.com",
-      projectId: "first-project-f1a1a",
-      storageBucket: "first-project-f1a1a.appspot.com",
-      messagingSenderId: "164016678375",
-      appId: "1:164016678375:web:e8f7f727a5757100d64942",
-      measurementId: "G-CEKLZGCXPS"
-    };
+    // const firebaseConfig = {
+    //   apiKey: "AIzaSyDyQ2sVGbZvzFJOSMDZLEdpv6KcvdCVlCw",
+    //   authDomain: "first-project-f1a1a.firebaseapp.com",
+    //   projectId: "first-project-f1a1a",
+    //   storageBucket: "first-project-f1a1a.appspot.com",
+    //   messagingSenderId: "164016678375",
+    //   appId: "1:164016678375:web:e8f7f727a5757100d64942",
+    //   measurementId: "G-CEKLZGCXPS"
+    // };
 
     // Initialize Firebase
     // const app = initializeApp(firebaseConfig);

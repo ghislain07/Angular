@@ -1,3 +1,4 @@
+import { ListeEtudiantComponent } from './etudiants/listes/liste-etudiant/liste-etudiant.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -20,6 +21,7 @@ const appRoutes: Routes = [
   { path: 'etudiant', component: EtudiantComponent },
   { path: 'auth/signin', component: SigninComponent },
   { path:'auth/signup', component: SignupComponent},
+  { path: 'liste', component: ListeEtudiantComponent},
   { path: '', pathMatch: 'full', redirectTo: 'auth/signin'}
   // { path: '', component: EtudiantComponent },
 ];
@@ -31,7 +33,8 @@ const appRoutes: Routes = [
     AuthComponent,
     SigninComponent,
     SignupComponent,
-    HeaderComponent
+    HeaderComponent,
+    ListeEtudiantComponent
   ],
   imports: [
     BrowserModule,
