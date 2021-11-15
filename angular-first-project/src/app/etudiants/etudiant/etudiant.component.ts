@@ -1,4 +1,4 @@
-import { firstValueFrom } from 'rxjs';
+import { lastValueFrom } from 'rxjs';
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EtudiantService } from 'src/app/services/etudiant.service';
@@ -38,12 +38,10 @@ export class EtudiantComponent implements OnInit {
   constructor(
     @Inject(EtudiantService) private service: EtudiantService,
     private builder: FormBuilder
-  ) {}
+  ) { }
 
   ngOnInit(): void {
-    // this.service.etudiants$.subscribe((etudiant) => {
-    //   this.etudiants$ = etudiant;
-    // });
+
   }
 
   // async onAjouter() {
@@ -62,20 +60,10 @@ export class EtudiantComponent implements OnInit {
   // }
   async onAjouter() {
     if (this.model.valid) {
-      // await this.service.create(this.model.getRawValue()).toPromise();
-      await firstValueFrom(this.service.create(this.model.getRawValue()));
-      // this.service.saveEtudiantToServer();
+      await lastValueFrom(this.service.create(this.model.getRawValue()));
       this.model.reset();
     }
     // this.service.etudiants$.subscribe((etudiant) => console.log(etudiant));
   }
-
-  // async onAjouter() {
-  // this.service.saveEtudiantToServer();
-  // }
-
-  // onFetch() {
-  //   this.service.getEtudiantsFromServer();
-  // }
 
 }

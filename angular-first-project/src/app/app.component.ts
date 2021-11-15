@@ -38,7 +38,7 @@ export class AppComponent {
   // );
 
   //observable$ = new Observable();
-   i = 0;
+  i = 0;
   multiplication$ = interval(3000).pipe(
     // tap(state =>{
 

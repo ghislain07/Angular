@@ -25,8 +25,13 @@
             <clr-dg-cell>{{ etudiant.id }}</clr-dg-cell>
             <clr-dg-cell>{{ etudiant.nomEtudiant }}</clr-dg-cell>
             <clr-dg-cell>{{ etudiant.prenomEtudiant }}</clr-dg-cell>
-            <clr-dg-cell>action</clr-dg-cell>
+            <clr-dg-cell>
+                <cds-icon
+                    shape="trash"
+                    solid
+                ></cds-icon>
+            </clr-dg-cell>
         </clr-dg-row>
-    <clr-dg-footer>{{ etudiants.length }} etudiants</clr-dg-footer>
+        <clr-dg-footer>{{ etudiants.length }} etudiants</clr-dg-footer>
     </ng-container>
 </clr-datagrid>

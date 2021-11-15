@@ -1,11 +1,6 @@
 {
   "etudiants": [
     {
-      "id": 256,
-      "nomEtudiant": "KOFFA",
-      "prenomEtudiant": "BLAISE"
-    },
-    {
       "id": 788,
       "nomEtudiant": "LOLA",
       "prenonEtudiant": "kou"
@@ -26,6 +21,11 @@
       "prenonEtudiant": "AKOLIPO"
     },
     {
+      "id": 200,
+      "nomEtudiant": "AGOSSIVI",
+      "prenomEtudiant": "AYELE"
+    },
+    {
       "id": 873,
       "nomEtudiant": "KODJO",
       "prenonEtudiant": "Honoré"
@@ -34,6 +34,31 @@
       "id": 113,
       "nomEtudiant": "ABALO",
       "prenonEtudiant": "KOSSI"
+    },
+    {
+      "id": 256,
+      "nomEtudiant": "KOFFA",
+      "prenomEtudiant": "BLAISE"
+    },
+    {
+      "id": 786,
+      "nomEtudiant": "JORAS",
+      "prenonEtudiant": "Jojo"
+    },
+    {
+      "id": 3,
+      "nomEtudiant": "AGBO",
+      "prenonEtudiant": "Victor"
+    },
+    {
+      "id": 872,
+      "nomEtudiant": "AKOLIPO",
+      "prenonEtudiant": "Pascal"
+    },
+    {
+      "id": 320,
+      "nomEtudiant": "GOZO",
+      "prenonEtudiant": "Bella"
     }
   ]
 }

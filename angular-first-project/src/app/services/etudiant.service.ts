@@ -1,3 +1,4 @@
+import { EtudiantServiceInterface } from './../etudiants/contrats/etudiants';
 import { Etudiant } from './../etudiants/models/etudiant';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -6,15 +7,13 @@ import { BehaviorSubject, from, map, Observable, startWith } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class EtudiantService {
+export class EtudiantService implements EtudiantServiceInterface {
   private url: string = 'http://localhost:3000/etudiants';
   private _etudiants$ = new BehaviorSubject<Etudiant[]>([]);
 
   public readonly etudiants$ = this._etudiants$.pipe(
     startWith([] as Etudiant[])
   );
-
-
   // create(etudiant: Etudiant) {
   //   return from(
   //     new Promise((resolve, rejects) => {
@@ -53,8 +52,8 @@ export class EtudiantService {
 
   getEtudiants$(): Observable<boolean> {
     return this.httpClient.get(this.url).pipe(
-      map((state)=> {
-        if(state && Array.isArray(state)) {
+      map((state) => {
+        if (state && Array.isArray(state)) {
           this._etudiants$.next(state as Etudiant[]);
           return true;
         } else {
