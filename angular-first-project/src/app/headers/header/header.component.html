@@ -6,27 +6,119 @@
     </ul>
   </div>
 </nav> -->
-<nav class="subnav">
+<!-- <nav class="subnav">
   <ul class="nav">
     <li class="nav-item">
-      <a class="nav-link active" routerLink="">Accueil</a>
+      <a routerLink class="nav-link nav-text">
+        Accueil
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" routerLink="auth">Authentification</a>
+      <a routerLink="auth" routerLinkActive="active" class="nav-link nav-text">
+        Authentification
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" routerLink="etudiant">Etudiants</a>
+      <a routerLink="etudiant" routerLinkActive="active" class="nav-link nav-text">
+        Etudiants
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="liste">Liste des Etudiants</a>
+      <a routerLink="liste" routerLinkActive="active" class="nav-link nav-text">
+        Liste des Etudiants
+      </a>
     </li>
   </ul>
   <ul class="nav navbar-nav navbar-right">
     <li class="nav-item">
-      <a class="nav-link" routerLink="auth/signup">Créer un compte</a>
+      <a routerLink="auth/signup" class="nav-link nav-text">
+        Créer un compte
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" routerLink="auth/signin">Connexion</a>
+      <a routerLink="auth/signin" class="nav-link nav-text">
+        Connexion
+      </a>
     </li>
   </ul>
-</nav>
+</nav> -->
+
+<!-- <div class="main-container">
+  <header class="header header-6">Etudiants</header>
+  <div class="content-container">
+    <header class="header header-6">Etudiants</header>
+    <nav class="sidenav">
+      <section class="sidenav-content">
+        <section class="nav-group collapsible">
+          <input id="tabexample1" type="checkbox">
+          <label for="tabexample1">Etudiant</label>
+          <ul class="nav-list">
+            <li>
+              <a routerLink="etudiant" routerLinkActive="active" class="nav-link nav-text">
+                Ajout Etudiant
+              </a>
+            </li>
+            <li>
+              <a routerLink="liste" routerLinkActive="active" class="nav-link nav-text">
+                Liste Etudiant
+              </a>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </nav>
+    <div class="content-area">...</div>
+  </div>
+</div> -->
+
+
+<!-- <div class="main-container"> -->
+  <!-- <header class="header header-6">Etudiants</header> -->
+  <!-- <div class="content-container"> -->
+    <clr-vertical-nav clrVerticalNavCollapsible="'demoCollapsible'">
+      <clr-vertical-nav-group routerLinkActive="active">
+        <cds-icon shape="user" clrVerticalNavIcon></cds-icon>
+        Etudiant
+        <clr-vertical-nav-group-children>
+          <a clrVerticalNavLink routerLink="etudiant" routerLinkActive="active">
+            Ajout Etudiant
+          </a>
+          <a clrVerticalNavLink routerLink="liste" routerLinkActive="active">
+            Liste Etudiant
+          </a>
+        </clr-vertical-nav-group-children>
+      </clr-vertical-nav-group>
+      <clr-vertical-nav-group routerLinkActive="active">
+        <cds-icon shape="flame" clrVerticalNavIcon></cds-icon>
+        Fire
+        <clr-vertical-nav-group-children>
+          <a clrVerticalNavLink routerLink="./fire/charmander" routerLinkActive="active">
+            Charmander
+          </a>
+          <a clrVerticalNavLink routerLink="./fire/charizard" routerLinkActive="active">
+            Charizard
+          </a>
+        </clr-vertical-nav-group-children>
+      </clr-vertical-nav-group>
+      <clr-vertical-nav-group routerLinkActive="active">
+        <cds-icon shape="bolt" clrVerticalNavIcon></cds-icon>
+        Electric
+        <clr-vertical-nav-group-children>
+          <a clrVerticalNavLink routerLink="./electric/pikachu" routerLinkActive="active">
+            Pikachu
+          </a>
+          <a clrVerticalNavLink routerLink="./electric/raichu" routerLinkActive="active">
+            Raichu
+          </a>
+        </clr-vertical-nav-group-children>
+      </clr-vertical-nav-group>
+      <a clrVerticalNavLink routerLinkActive="active" routerLink="./credit">
+        <cds-icon shape="certificate" clrVerticalNavIcon></cds-icon>
+        Credit
+      </a>
+    </clr-vertical-nav>
+    <!-- <div class="content-area">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div> -->

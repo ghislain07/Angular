@@ -36,7 +36,7 @@ export class EtudiantService implements EtudiantServiceInterface {
     const etu_ = {
       id: new Date().getMilliseconds(),
       nomEtudiant: etudiant?.nomEtudiant,
-      prenonEtudiant: etudiant?.prenomEtudiant,
+      prenomEtudiant: etudiant?.prenomEtudiant,
     };
     return this.httpClient.post(this.url, etu_).pipe(
       map((etudiant_) => {

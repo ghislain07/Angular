@@ -12,8 +12,8 @@
           [appareilStatus]="appareil.status">
         </app-appareil>
       </ul> -->
-<!-- [] pour lier à une propriéte-->
-<!-- () pour lier à un évènement du dom et on y met la méthode-->
+<!-- [] pour lier à une propriéte -->
+<!-- () pour lier à un évènement du dom et on y met la méthode -->
 <!-- [()] la liaison à double sens entre le ts en le template -->
 <!-- <button class="btn btn-success" [disabled]="!isAuth" (click)="onAllumer()">Tout allumé
 
@@ -28,7 +28,6 @@
   <app-card-footer [footer]="'Card footer'"></app-card-footer>
 </app-card> -->
 
-
 <!-- <ng-container *ngIf="talkObservable2$ | async as talk">
   <p> {{ talk }} </p>
 </ng-container> -->
@@ -39,7 +38,61 @@
 <!-- </ng-container> -->
 
 <!-- <app-etudiant></app-etudiant> -->
-<app-header></app-header>
-<div class="container">
-  <router-outlet></router-outlet>
+<!-- <app-header></app-header>
+<div class="content-container">
+    <div class="content-area">
+        <router-outlet></router-outlet>
+    </div>
+</div> -->
+
+<div class="main-container">
+  <header class="header header-6">Etudiants</header>
+  <div class="content-container">
+    <!-- <app-header></app-header> -->
+    <clr-vertical-nav clrVerticalNavCollapsible="'demoCollapsible'">
+      <clr-vertical-nav-group routerLinkActive="active">
+        <cds-icon shape="user" clrVerticalNavIcon></cds-icon>
+        Etudiant
+        <clr-vertical-nav-group-children>
+          <a clrVerticalNavLink routerLink="etudiant" routerLinkActive="active">
+            Ajout Etudiant
+          </a>
+          <a clrVerticalNavLink routerLink="liste" routerLinkActive="active">
+            Liste Etudiant
+          </a>
+        </clr-vertical-nav-group-children>
+      </clr-vertical-nav-group>
+      <clr-vertical-nav-group routerLinkActive="active">
+        <cds-icon shape="flame" clrVerticalNavIcon></cds-icon>
+        Fire
+        <clr-vertical-nav-group-children>
+          <a clrVerticalNavLink routerLink="./fire/charmander" routerLinkActive="active">
+            Charmander
+          </a>
+          <a clrVerticalNavLink routerLink="./fire/charizard" routerLinkActive="active">
+            Charizard
+          </a>
+        </clr-vertical-nav-group-children>
+      </clr-vertical-nav-group>
+      <clr-vertical-nav-group routerLinkActive="active">
+        <cds-icon shape="bolt" clrVerticalNavIcon></cds-icon>
+        Electric
+        <clr-vertical-nav-group-children>
+          <a clrVerticalNavLink routerLink="./electric/pikachu" routerLinkActive="active">
+            Pikachu
+          </a>
+          <a clrVerticalNavLink routerLink="./electric/raichu" routerLinkActive="active">
+            Raichu
+          </a>
+        </clr-vertical-nav-group-children>
+      </clr-vertical-nav-group>
+      <a clrVerticalNavLink routerLinkActive="active" routerLink="./credit">
+        <cds-icon shape="certificate" clrVerticalNavIcon></cds-icon>
+        Credit
+      </a>
+    </clr-vertical-nav>
+    <div class="content-area">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>

@@ -3,22 +3,22 @@
     {
       "id": 788,
       "nomEtudiant": "LOLA",
-      "prenonEtudiant": "kou"
+      "prenomEtudiant": "kou"
     },
     {
       "id": 161,
       "nomEtudiant": "AKOFA",
-      "prenonEtudiant": "HULK"
+      "prenomEtudiant": "HULK"
     },
     {
       "id": 716,
       "nomEtudiant": "AGBOKOU",
-      "prenonEtudiant": "Auber"
+      "prenomEtudiant": "Auber"
     },
     {
       "id": 402,
       "nomEtudiant": "AGBAVI",
-      "prenonEtudiant": "AKOLIPO"
+      "prenomEtudiant": "AKOLIPO"
     },
     {
       "id": 200,
@@ -28,12 +28,12 @@
     {
       "id": 873,
       "nomEtudiant": "KODJO",
-      "prenonEtudiant": "Honoré"
+      "prenomEtudiant": "Honoré"
     },
     {
       "id": 113,
       "nomEtudiant": "ABALO",
-      "prenonEtudiant": "KOSSI"
+      "prenomEtudiant": "KOSSI"
     },
     {
       "id": 256,
@@ -43,22 +43,37 @@
     {
       "id": 786,
       "nomEtudiant": "JORAS",
-      "prenonEtudiant": "Jojo"
+      "prenomEtudiant": "Jojo"
     },
     {
       "id": 3,
       "nomEtudiant": "AGBO",
-      "prenonEtudiant": "Victor"
+      "prenomEtudiant": "Victor"
     },
     {
       "id": 872,
       "nomEtudiant": "AKOLIPO",
-      "prenonEtudiant": "Pascal"
+      "prenomEtudiant": "Pascal"
     },
     {
       "id": 320,
       "nomEtudiant": "GOZO",
-      "prenonEtudiant": "Bella"
+      "prenomEtudiant": "Bella"
+    },
+    {
+      "id": 633,
+      "nomEtudiant": "ABALOKISSEM",
+      "prenomEtudiant": "Richard"
+    },
+    {
+      "id": 311,
+      "nomEtudiant": "JOJI",
+      "prenomEtudiant": "OLDO"
+    },
+    {
+      "id": 725,
+      "nomEtudiant": "KOKO",
+      "prenomEtudiant": "KIKI"
     }
   ]
 }
